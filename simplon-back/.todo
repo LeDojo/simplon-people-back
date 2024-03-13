@@ -1,0 +1,12 @@
+Next steps:
+  Back:
+    ☐ Finir le CRUD (Update / Delete)
+    ☐ Contribution CRUD (Controllet / Routes)
+    ☐ Routes pour les users
+      ☐ FIXME: Implémenter la methode pour le owner dans le auth
+
+  Front:
+    ☐ Implémenter le starter
+    ☐ Formulaire de création de projet
+    ☐ Formulaire d'inscription et de connexion
+    ☐ Afficher la liste des projets en cours (ongoing)
