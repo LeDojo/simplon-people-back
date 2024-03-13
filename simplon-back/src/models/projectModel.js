@@ -14,7 +14,9 @@ const projectSchema = new mongoose.Schema({
     enum: ["ongoing", "completed", "canceled"],
     default: "ongoing",
   },
-  owner: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+  owner: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  // FIXME: Add connection between projects and user (when user logedin)
+  // owner: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
   contributions: [
     {
       type: mongoose.Schema.Types.ObjectId,
@@ -23,4 +25,5 @@ const projectSchema = new mongoose.Schema({
   ],
 });
 
-module.exports = mongoose.model("Project", projectSchema);
+const Project = mongoose.model("Project", projectSchema);
+module.exports = Project;
